@@ -1,6 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import { renderNothing } from '../'
+/* eslint-disable */
 
 test('renderNothing returns a component that renders null', () => {
   const Nothing = renderNothing('div')

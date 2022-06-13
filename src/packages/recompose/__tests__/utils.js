@@ -1,6 +1,7 @@
 import React from 'react'
 import setDisplayName from '../setDisplayName'
 import wrapDisplayName from '../wrapDisplayName'
+/* eslint-disable */
 
 export const countRenders = BaseComponent => {
   class CountRenders extends React.Component {
