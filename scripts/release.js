@@ -154,7 +154,7 @@ try {
   exec(`git add ${versionLoc}`)
   exec(`git commit -m "${packageName} ${newTagName}"`)
 
-  if (packageName === 'recompose') {
+  if (packageName === 'recompose-react-17') {
     log(`Tagging release... (${newTagName})`)
     exec(`git tag ${newTagName}`)
   }
