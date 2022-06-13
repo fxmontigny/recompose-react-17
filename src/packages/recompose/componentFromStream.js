@@ -2,6 +2,7 @@ import { Component } from 'react'
 import { createChangeEmitter } from 'change-emitter'
 import $$observable from 'symbol-observable'
 import { config as globalConfig } from './setObservableConfig'
+/* eslint-disable */
 
 export const componentFromStreamWithConfig = config => propsToVdom =>
   class ComponentFromStream extends Component {

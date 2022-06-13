@@ -4,6 +4,7 @@ import { Observable, Subject } from 'rxjs'
 import sinon from 'sinon'
 import rxjsConfig from '../rxjsObservableConfig'
 import { componentFromStreamWithConfig } from '../componentFromStream'
+/* eslint-disable */
 
 const componentFromStream = componentFromStreamWithConfig(rxjsConfig)
 

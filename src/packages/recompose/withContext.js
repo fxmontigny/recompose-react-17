@@ -1,6 +1,7 @@
 import { createFactory, Component } from 'react'
 import setDisplayName from './setDisplayName'
 import wrapDisplayName from './wrapDisplayName'
+/* eslint-disable */
 
 const withContext = (childContextTypes, getChildContext) => BaseComponent => {
   const factory = createFactory(BaseComponent)

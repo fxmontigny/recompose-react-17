@@ -4,6 +4,7 @@ import pick from './utils/pick'
 import shallowEqual from './shallowEqual'
 import setDisplayName from './setDisplayName'
 import wrapDisplayName from './wrapDisplayName'
+/* eslint-disable */
 
 const withPropsOnChange = (shouldMapOrKeys, propsMapper) => BaseComponent => {
   const factory = createFactory(BaseComponent)

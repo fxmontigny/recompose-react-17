@@ -1,6 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import { componentFromProp } from '../'
+/* eslint-disable */
 
 test('componentFromProp creates a component that takes a component as a prop and renders it with the rest of the props', () => {
   const Container = componentFromProp('component')

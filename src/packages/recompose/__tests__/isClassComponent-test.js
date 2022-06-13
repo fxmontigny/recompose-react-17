@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import createReactClass from 'create-react-class'
 import isClassComponent from '../isClassComponent'
+/* eslint-disable */
 
 test('isClassComponent returns false for functions', () => {
   const Foo = () => <div />

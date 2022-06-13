@@ -2,6 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import sinon from 'sinon'
 import { withReducer, compose, flattenProp } from '../'
+/* eslint-disable */
 
 const SET_COUNTER = 'SET_COUNTER'
 

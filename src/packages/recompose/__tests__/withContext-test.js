@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { mount } from 'enzyme'
 import sinon from 'sinon'
 import { withContext, getContext, compose, mapProps } from '../'
+/* eslint-disable */
 
 test('withContext + getContext adds to and grabs from context', () => {
   // Mini React Redux clone

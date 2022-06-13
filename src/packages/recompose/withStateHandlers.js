@@ -2,6 +2,7 @@ import { createFactory, Component } from 'react'
 import setDisplayName from './setDisplayName'
 import wrapDisplayName from './wrapDisplayName'
 import mapValues from './utils/mapValues'
+/* eslint-disable */
 
 const withStateHandlers = (initialState, stateUpdaters) => BaseComponent => {
   const factory = createFactory(BaseComponent)

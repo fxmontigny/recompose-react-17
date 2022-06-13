@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { polyfill } from 'react-lifecycles-compat'
+/* eslint-disable */
 
 const createSink = callback => {
   class Sink extends Component {

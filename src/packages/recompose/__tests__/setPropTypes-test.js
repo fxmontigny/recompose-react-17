@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { setPropTypes } from '../'
+/* eslint-disable */
 
 test('setPropTypes sets a static property on the base component', () => {
   const BaseComponent = () => <div />

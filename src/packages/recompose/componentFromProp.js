@@ -1,5 +1,6 @@
 import { createElement } from 'react'
 import omit from './utils/omit'
+/* eslint-disable */
 
 const componentFromProp = propName => {
   const Component = props =>

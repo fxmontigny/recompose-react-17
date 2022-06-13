@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import getDisplayName from './getDisplayName'
 import isClassComponent from './isClassComponent'
+/* eslint-disable */
 
 const toClass = baseComponent =>
   isClassComponent(baseComponent)

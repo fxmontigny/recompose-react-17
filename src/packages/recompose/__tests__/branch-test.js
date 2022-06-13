@@ -40,6 +40,7 @@ test('branch tests props and applies one of two HoCs, for true and false', () =>
 })
 
 test('branch defaults third argument to identity function', () => {
+  /* eslint-disable */
   const Left = () => <div className="left">Left</div>
   const Right = () => <div className="right">Right</div>
 

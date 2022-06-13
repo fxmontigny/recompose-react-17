@@ -2,6 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import sinon from 'sinon'
 import { withHandlers, withState, compose } from '../'
+/* eslint-disable */
 
 test('withHandlers passes handlers to base component', () => {
   let submittedFormValue

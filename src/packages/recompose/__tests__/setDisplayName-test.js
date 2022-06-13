@@ -1,5 +1,6 @@
 import React from 'react'
 import { setDisplayName } from '../'
+/* eslint-disable */
 
 test('setDisplayName sets a static property on the base component', () => {
   const BaseComponent = () => <div />
