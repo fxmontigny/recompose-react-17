@@ -4,7 +4,6 @@ import babel from 'rollup-plugin-babel'
 import replace from 'rollup-plugin-replace'
 import commonjs from 'rollup-plugin-commonjs'
 import { uglify } from 'rollup-plugin-uglify'
-import { sizeSnapshot } from 'rollup-plugin-size-snapshot'
 import { pascalCase } from 'change-case'
 
 const { PACKAGES_SRC_DIR, PACKAGES_OUT_DIR } = require('./getPackageNames')
@@ -25,8 +24,6 @@ const getBabelOptions = ({ useESModules }) => ({
   plugins: [['@babel/transform-runtime', { useESModules }]],
 })
 
-const matchSnapshot = process.env.SNAPSHOT === 'match'
-
 export default [
   {
     input,
@@ -44,7 +41,6 @@ export default [
       babel(getBabelOptions({ useESModules: true })),
       commonjs(),
       replace({ 'process.env.NODE_ENV': JSON.stringify('development') }),
-      sizeSnapshot({ matchSnapshot }),
     ],
   },
 
@@ -64,7 +60,6 @@ export default [
       babel(getBabelOptions({ useESModules: true })),
       commonjs(),
       replace({ 'process.env.NODE_ENV': JSON.stringify('production') }),
-      sizeSnapshot({ matchSnapshot }),
       uglify(),
     ],
   },
@@ -86,9 +81,6 @@ export default [
       format: 'es',
     },
     external: isExternal,
-    plugins: [
-      babel(getBabelOptions({ useESModules: true })),
-      sizeSnapshot({ matchSnapshot }),
-    ],
+    plugins: [babel(getBabelOptions({ useESModules: true }))],
   },
 ]
